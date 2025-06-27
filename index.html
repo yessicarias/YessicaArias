@@ -2,103 +2,135 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bienvenido a mi primera página web</title>
+  <meta name="description" content="Sitio personal de Yessica Dayana Arias Mendoza. Alumna de Administración de Negocios, amante de la natación y el aprendizaje continuo.">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff0f5;
+      background-color: #ffe6f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
       color: #333;
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
     }
-
-    h1, h2 {
+    header {
+      background-color: #ffb3cc;
+      padding: 2rem;
       text-align: center;
-      color: #c94f7c;
     }
-
-    p {
-      font-size: 18px;
-      line-height: 1.7;
-      text-align: justify;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
-
-    a {
-      color: #b83f6d;
+    nav {
+      background-color: #ff99bb;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
       text-decoration: none;
       font-weight: bold;
     }
-
-    a:hover {
-      text-decoration: underline;
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff0f5;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    .section {
-      margin-top: 40px;
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
     }
-
+    .section-title {
+      color: #cc3366;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
     ul {
-      font-size: 17px;
-      line-height: 1.6;
-      padding-left: 20px;
+      list-style: none;
+      padding-left: 0;
     }
-
-    li {
-      margin-bottom: 8px;
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    a.button {
+      color: #fff;
+      background-color: #cc3366;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
-  <h1>Bienvenido a mi primera página web</h1>
-  <h2>Yessica Dayana Arias Mendoza</h2>
+  <header>
+    <h1>Bienvenido a mi primera página web</h1>
+    <p><strong>Yessica Dayana Arias Mendoza</strong></p>
+  </header>
 
-  <p>
-    Soy alumna del V semestre de Administración de Negocios en la 
-    <a href="https://ucsp.edu.pe" target="_blank">Universidad Católica San Pablo</a>.
-    Me apasiona aprender, y entre mis hobbies favoritos están preparar postres, bailar y disfrutar de la natación, deporte que practico desde que era muy pequeña. 
-    La constancia y la disciplina que aprendí en el deporte me han acompañado hasta hoy en todas mis metas personales y profesionales.
-  </p>
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#instituciones">Instituciones</a>
+    <a href="#profesores">Profesores</a>
+    <a href="#compañeros">Compañeros</a>
+    <a href="https://www.linkedin.com/in/yessica-arias-64864a29b" target="_blank">Mi LinkedIn</a>
+  </nav>
 
-  <p>
-    Trabajé como moza en el <strong>Club Internacional</strong>, donde adquirí experiencia laboral desde joven y aprendí el valor del trabajo en equipo y la atención al cliente.
-    Además, estudié inglés en el 
-    <a href="https://www.cultural.edu.pe" target="_blank">Centro Cultural Peruano Norteamericano</a>, lo cual me permitió viajar al extranjero y trabajar en 
-    <a href="https://www.camelbackmountain.com" target="_blank">Camelback Resort</a> durante mis vacaciones. 
-    Estoy convencida de que estar en formación constante abre puertas, enriquece nuestras capacidades y nos prepara para nuevos desafíos.
-  </p>
+  <main>
+    <section id="sobre-mi">
+      <h2 class="section-title">Sobre mí</h2>
+      <p>
+        Soy alumna del V semestre de Administración de Negocios en la Universidad Católica San Pablo.
+        Mis hobbies favoritos son preparar postres, bailar y disfruto mucho de la natación, un deporte que aprendí desde muy pequeña y que me ha acompañado desde entonces como una fuente de disciplina y bienestar.
+      </p>
+      <p>
+        Trabajé en el Club Internacional de Arequipa como moza, lo cual me permitió adquirir experiencia laboral desde joven.
+        Además, estudié inglés en el Cultural, lo que me abrió la oportunidad de viajar y trabajar en el extranjero, en Camelback, durante las vacaciones.
+        Creo firmemente que estar en formación constante te abre puertas a experiencias enriquecedoras.
+      </p>
+    </section>
 
-  <div class="section">
-    <h2>Mi perfil de LinkedIn</h2>
-    <p>
-      <a href="https://www.linkedin.com/in/tuusuarioaqui" target="_blank">Visita mi perfil de LinkedIn</a>
-    </p>
-  </div>
+    <section id="instituciones">
+      <h2 class="section-title">Instituciones vinculadas</h2>
+      <ul>
+        <li><a href="https://ucsp.edu.pe/" target="_blank">Universidad Católica San Pablo</a></li>
+        <li><a href="https://cultural.edu.pe/" target="_blank">Centro Cultural Peruano Norteamericano</a></li>
+        <li><a href="https://www.camelbackresort.com/" target="_blank">Camelback Resort</a></li>
+        <li><a href="https://clubinternacional.pe/" target="_blank">Club Internacional de Arequipa</a></li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Compañeros de clase</h2>
-    <ul>
-      <li><a href="https://linkedin.com/in/compañero1" target="_blank">Nombre del Compañero 1</a></li>
-      <li><a href="https://linkedin.com/in/compañero2" target="_blank">Nombre del Compañero 2</a></li>
-      <li><a href="https://linkedin.com/in/compañero3" target="_blank">Nombre del Compañero 3</a></li>
-      <li><a href="https://linkedin.com/in/compañero4" target="_blank">Nombre del Compañero 4</a></li>
-      <li><a href="https://linkedin.com/in/compañero5" target="_blank">Nombre del Compañero 5</a></li>
-      <li><a href="https://linkedin.com/in/compañero6" target="_blank">Nombre del Compañero 6</a></li>
-      <li><a href="https://linkedin.com/in/compañero7" target="_blank">Nombre del Compañero 7</a></li>
-      <li><a href="https://linkedin.com/in/compañero8" target="_blank">Nombre del Compañero 8</a></li>
-      <li><a href="https://linkedin.com/in/compañero9" target="_blank">Nombre del Compañero 9</a></li>
-      <li><a href="https://linkedin.com/in/compañero10" target="_blank">Nombre del Compañero 10</a></li>
-    </ul>
-  </div>
+    <section id="profesores">
+      <h2 class="section-title">Mis profesores</h2>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/mar%C3%ADa-eugenia-cano-aguirre-42b94660" target="_blank">María Eugenia Cano Aguirre - Artes Visuales</a></li>
+        <li><a href="https://www.linkedin.com/in/raul-valverde-quiroz-5bb589196" target="_blank">Raúl Valverde Quiroz - Costos y Planeamiento Presupuestal</a></li>
+        <li><a href="https://www.linkedin.com/in/mart%C3%ADn-quintanilla-18a030127" target="_blank">Martín Quintanilla - Habilidades de Negociación</a></li>
+        <li><a href="https://www.linkedin.com/in/ecuadrosv" target="_blank">Edwin Cuadros - Análisis de Datos I</a></li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Profesores y Cursos</h2>
-    <ul>
-      <li>Análisis de datos – https://www.linkedin.com/in/ecuadrosv</li>
-      <li>Desarrollo de habilidades de Negociación – https://www.linkedin.com/in/mart%C3%ADn-quintanilla-18a030127</li>
-      <li>Costos y Planeamiento Presupuestal – https://www.linkedin.com/in/raul-valverde-quiroz-5bb589196</li>
-      <li>Apreciación Artística – https://www.linkedin.com/in/mar%C3%ADa-eugenia-cano-aguirre-42b94660</li>
-    </ul>
-  </div>
+    <section id="compañeros">
+      <h2 class="section-title">Compañeros</h2>
+      <ul>
+        <li><a href="https://fabian-gustavo-sanchez-poma.github.io/" target="_blank">Fabián Sanchez Poma</a></li>
+        <li><a href="https://dianacampano.github.io/" target="_blank">Diana Campano</a></li>
+        <li><a href="https://thirzaalexkacansayaescobedo.github.io/ThirzaCansaya/" target="_blank">Thirza Cansaya</a></li>
+        <li><a href="https://hugosoncco.neocities.org/" target="_blank">Hugo Soncco</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Yessica Dayana Arias Mendoza — Todos los derechos reservados.
+  </footer>
 </body>
 </html>
